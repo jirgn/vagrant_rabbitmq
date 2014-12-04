@@ -1,0 +1,51 @@
+FORGE
+  remote: https://forge.puppetlabs.com
+  specs:
+    example42-puppi (2.1.10)
+    nanliu-staging (1.0.2)
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-stdlib (4.4.0)
+    stahnma-epel (1.0.0)
+
+GIT
+  remote: https://github.com/example42/puppet-yum.git
+  ref: master
+  sha: 1ce55ddd95400d5e3ab154a50277dea267d74d19
+  specs:
+    yum (2.1.17)
+      example42-puppi (> 2.0.0)
+
+GIT
+  remote: https://github.com/garethr/garethr-erlang.git
+  ref: master
+  sha: 31f8e476a6a5febd4fdeb6b6ff274f0c38a288cc
+  specs:
+    erlang (0.3.0)
+      puppetlabs-apt (>= 0)
+      puppetlabs-stdlib (>= 0)
+      stahnma-epel (>= 0)
+
+GIT
+  remote: https://github.com/puphpet/puppetlabs-stdlib.git
+  ref: master
+  sha: ab981422a67636441f1bfebaaade36aa690f1f25
+  specs:
+    stdlib (4.1.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-rabbitmq.git
+  ref: master
+  sha: 92031d60e383e1b4b982460d2b9a307b84c9ce25
+  specs:
+    rabbitmq (4.1.0)
+      nanliu-staging (>= 0.3.1)
+      puppetlabs-apt (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.0.0)
+
+DEPENDENCIES
+  erlang (>= 0)
+  rabbitmq (>= 0)
+  stdlib (>= 0)
+  yum (>= 0)
+

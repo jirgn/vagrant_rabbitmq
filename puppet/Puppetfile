@@ -1,0 +1,12 @@
+
+mod "stdlib",
+    :git => "https://github.com/puphpet/puppetlabs-stdlib.git"
+
+mod "yum",
+    :git => "https://github.com/example42/puppet-yum.git"
+
+mod "rabbitmq",
+    :git => "https://github.com/puppetlabs/puppetlabs-rabbitmq.git"
+
+mod "erlang",
+    :git => "https://github.com/garethr/garethr-erlang.git"
