@@ -1,7 +1,4 @@
-# Environment for Centos 6.5 with PHP Phalcon Framwork
-
-
-
+# Environment for Centos 6.5 with RabbitMq
 
 ## Installation Notes
 
