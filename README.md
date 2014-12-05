@@ -23,3 +23,8 @@ Run Virtualmachine with:
     vagrant up --provider="virtualbox"
      
 ### Configure your local Machine
+
+### RabbitMq
+
+[WebInterface](http://localhost:15672)
+with guest :  guest
