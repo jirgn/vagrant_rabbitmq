@@ -8,7 +8,7 @@ class environment {
   Exec { path => [ '/bin/', '/sbin/', '/usr/bin/', '/usr/sbin/' ] }
 
   $ssh_username = "vagrant"
-  
+
   file { "/home/${ssh_username}":
       ensure => directory,
       owner  => $ssh_username,
@@ -23,7 +23,13 @@ class environment {
     onlyif  => 'test -d /vagrant/puppet/files/dot',
     returns => [0, 1],
   }
+
+  ## -- stop firewall -> should be repaced by rule
+  service { 'iptables':
+    ensure => "stopped",
+  }
 }
+
 class { 'environment':
   stage    => 'pre',
 }
